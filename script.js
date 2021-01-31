@@ -10,7 +10,7 @@ function setClock(){
     setRotation(secondHand,secondsRatio)
     setRotation(minuteHand,minutesRatio)
     setRotation(hourHand,hoursRatio)
-    digitalClockText.innerText = currentDate.getHours().toString() + " : " + currentDate.getMinutes().toString() + " : " + currentDate.getSeconds().toString()// + " " + getAMPM()
+    digitalClockText.innerText = currentDate.getHours().toString() + ":" + currentDate.getMinutes().toString() + ":" + currentDate.getSeconds().toString() + " " + getAMPM(currentDate)
 }
 
 
@@ -26,8 +26,11 @@ function setRotation(element,rotationRatio) {
 }
 
 
-function getAMPM(){
-    return currentDate.getTime().toString()
+function getAMPM(currentDate){
+    if (currentDate.getHours()<12){
+        return "AM"
+    }
+    else {return "PM"}
 }
 
 //code
