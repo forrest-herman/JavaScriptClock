@@ -10,6 +10,7 @@ function setClock(){
     setRotation(secondHand,secondsRatio)
     setRotation(minuteHand,minutesRatio)
     setRotation(hourHand,hoursRatio)
+    digitalClockText.innerText = currentDate.getHours().toString() + " : " + currentDate.getMinutes().toString() + " : " + currentDate.getSeconds().toString()// + " " + getAMPM()
 }
 
 
@@ -17,6 +18,7 @@ function setClock(){
 const secondHand = document.querySelector('[data-second-hand]')
 const minuteHand = document.querySelector('[data-minute-hand]')
 const hourHand = document.querySelector('[data-hour-hand]')
+const digitalClockText = document.querySelector('[data-digital-clock]')
 
 
 function setRotation(element,rotationRatio) {
@@ -24,6 +26,9 @@ function setRotation(element,rotationRatio) {
 }
 
 
+function getAMPM(){
+    return currentDate.getTime().toString()
+}
 
 //code
 

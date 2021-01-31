@@ -6,17 +6,20 @@
 
 body{
     background: linear-gradient(92deg, #82be6a,#e3ffb6);
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.analogClockSpace{
     display: flex;
     justify-content:center;
     align-items: center;
-    min-height: 100vh;
-    overflow: hidden;
 }
 
 .clock{
     width: 500px;
     height: 500px;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.7);
     border-radius: 50%;
     border: 2px solid rgb(30, 37, 30);
     position: relative;
@@ -95,7 +98,17 @@ body{
 }
 
 .title{
-    align-content: center;
     text-align: center;
-    /* padding: 20%; */
+    padding-top: 10%;
+    font-size: 3rem;
+    text-shadow: 0.5px 0.5px 3px rgb(13, 31, 10);
+}
+
+
+
+.digitalClockSpace{
+    text-align: center;
+    padding: 10%;
+    font-size: 5rem;
+    text-shadow: 0.5px 0.5px 3px rgb(13, 31, 10);
 }
