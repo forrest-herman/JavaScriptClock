@@ -5,7 +5,7 @@
 }
 
 body{
-    background: linear-gradient(92deg, #82be6a,#e3ffb6);
+    background: linear-gradient(58deg, #68b973,#e3ffb6);
     overflow: hidden;
     min-height: 100vh;
 }
@@ -99,7 +99,7 @@ body{
 
 .title{
     text-align: center;
-    padding-top: 10%;
+    padding: 10%;
     font-size: 3rem;
     text-shadow: 0.5px 0.5px 3px rgb(13, 31, 10);
 }
@@ -109,6 +109,6 @@ body{
 .digitalClockSpace{
     text-align: center;
     padding: 10%;
-    font-size: 5rem;
+    font-size: 4rem;
     text-shadow: 0.5px 0.5px 3px rgb(13, 31, 10);
 }
